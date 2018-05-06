@@ -13,6 +13,11 @@
 
 目前仅测试过，适用于广东工业大学的drcom客户端（drcom 5.2.1p），理论上也支持其他学校的drcom客户端，请自测。如有需要移植到其他学校，请联系我（chenhaowen01@qq.com）。
 
+# What I have changed from the original `gdut-drcom`
+* Added binary releases for Linux-i386 & Raspberry Pi.
+* Added a auto install script for Linux.
+* Added a systemd service configuration file for Linux.
+
 # compile
 * Linux
 ```bash
