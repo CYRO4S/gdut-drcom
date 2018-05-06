@@ -1,0 +1,13 @@
+[Unit]
+Description=Drcom Service
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+PIDFile=/var/run/gdut-drcom.pid
+ExecStart=/usr/bin/gdut-drcom --remote-ip [YOUR DRCOM SERVER IP ADDRESS]
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
